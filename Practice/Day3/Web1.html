@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+</head>
+<style>
+    .background{
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            z-index: -1;
+            background: var(--color-darkblue);
+            background-image: linear-gradient(115deg,
+                    rgba(58, 58, 158, 0.8),
+                    rgba(136, 136, 206, 0.7)),
+                url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    .header{
+        padding: 0 0.625rem;
+        margin-bottom: 1.875rem;
+    }
+    header{
+        display: block;
+    }
+    body {
+    
+display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}    
+    h2,p {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }    
+       .form {
+            background-color: #1b1b32; 
+            margin: auto;
+            width: 720px;
+            padding: 2.5rem;
+            border-radius: 0.25;
+       } 
+    label{
+        display: block;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+    }
+    .label {
+        display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    }
+    input[type="text"], input[type="number"], 
+    .item:nth-child(4)>select{
+        width: 100%;
+        padding: 5px;
+        color: gray;
+    }    
+      select{
+          width: 100%;
+          padding: 5px;
+          color: gray;
+          margin-bottom: 8px;
+      }  
+      input:focus,select:focus {
+          outline: none;
+          padding: 5px;
+      }
+      option:hover{
+           padding: 5px;
+           color: white;
+      }
+     .item{
+         margin-bottom: 20px;
+         color:white;
+     }   
+     input[type="radio"],input[type="checkbox"]{
+         margin-bottom: 10px;
+     }
+        textarea{
+            width: 100%;
+            min-height: 100px;
+        }
+       input[type="button"] {
+           width: 100%;
+           background-color: #37af65;
+           color: white;
+           padding: 5px;
+           font-size: 1rem;
+           border-radius: 0.25rem;
+       }
+        .clue{
+            margin-left: 0.25rem;
+            font-size: 0.9rem;
+            color: #e4e4e4;
+        }
+        </style>
+<body>
+    <div class="background"></div>
+    <header class="header">
+      <h2>freeCodeCamp Survey Form</h2>
+      <p>thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <div class="form">
+   <div class="item"> <!--name-->
+       <label>Name</label>
+       <input type="text" placeholder="Enter your name">
+   </div>
+   
+   
+   <div class="item"> <!--email-->
+       <label>Email</label>
+       <input type="text" placeholder="Enter your Email">
+   </div>
+   
+   
+   <div class="item"> <!--age-->
+       <label>Age <span>(optonal)</span></label>
+       <input type="number" placeholder="Age">
+   </div>
+   
+   <div class="item"> <!--option-->
+    <p>Which option best describes your current role?</p>   
+    <select>
+        <option >Student</option>
+        <option >Full Time Job</option>
+        <option >Full time Learner</option>
+        <option >Prefer not to say</option>
+        <option >Other</option>
+    </select>
+       </div>
+   
+   <div class="item"> <!--checkbox-->
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <label>
+        <input type="radio">"Definitely" <br />
+    
+      <input type="radio">"Maybe" <br />
+     
+    <input type="radio">"Not sure" <br />
+    </label>
+   </div>
+   
+   <div class="item"> <!--select-->
+       <label >What is your favorite feature of freeCodeCamp?</label>
+      <select>
+       <option>select an option</option>
+       <option >Challenges</option>
+       <option >Project</option>
+       <option >Community</option>
+       <option >Open source</option>
+      </select> 
+</div>
+   
+   <div class="item"> <!--select2-->
+    <p>"What would you like to see improve?"<span class="clue">(Check all that apply)</span></p>   
+    <label ></label>
+       <input type="checkbox">Front-end Projects <br />
+       <input type="checkbox">Back-end Projects <br />
+       <input type="checkbox">Data Visualization <br />
+       <input type="checkbox">Challenges <br />
+       <input type="checkbox">Open Source Community <br />
+       <input type="checkbox">Gitter help rooms<br />
+       <input type="checkbox">Videos<br />
+       <input type="checkbox">City Meetups<br />
+       <input type="checkbox">Wiki<br />
+       <input type="checkbox">Forum<br />
+       <input type="checkbox" class="last_checkbox">Additional Courses <br />
+
+       
+   </div>
+   
+   <div class="item"> <!--comment-->
+       <p>Any comments or suggestions?</p>
+       <textarea placeholder="Enter your comment here..."></textarea>
+   </div>
+   
+   <div class="item"> <!--button-->
+       <input type="button" value="submit">
+   </div>
+</div>
+</body>
+</html>
