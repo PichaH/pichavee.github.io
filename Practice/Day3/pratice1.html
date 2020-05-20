@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use CSS</title>
+</head>
+<style>
+ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+ .grid-container {
+     display: grid;
+     grid-template-columns: auto auto;
+     background-color: cornflowerblue;
+     padding: 100px;
+ }
+ .grid-item{
+     background-color: rgb(224, 253, 119);
+     border: 1px solid rgb(20, 68, 68);
+     padding: 50px;
+     font-size: 20px;
+     text-align: left;
+ }
+ h1{
+     text-align: center;
+     color: darkblue;
+     font-size: 50px;
+ }
+ .grid-item{
+  color: rgb(60, 25, 126) ;
+ }
+</style>
+<body>
+    <h1>How to use CSS</h1>
+
+    <div class="grid-container"> 
+    <div class="grid-item">Question</div>
+    <div class="grid-item">Answer</div>
+    <div class="grid-item">1.css syntax ประกอบด้วยอะไรบ้าง?</div>
+    <div class="grid-item">ประกอบด้วย selector,property,value</div>
+    <div class="grid-item">2. การเขียน CSS มีกี่แบบอะไรบ้าง?</div>
+    <div class="grid-item">มี 3 แบบ : Inline,External,Internal</div>
+    <div class="grid-item">3.selector มีกี่แบบอะไรบ้าง?</div>
+    <div class="grid-item">ID,Class,Pseudo element,Pseudo class,combinators
+        <br>attribute selector.</div>
+    <div class="grid-item">4. combinator มีกี่แบบอะไรบ้าง ?</div>
+    <div class="grid-item">Space,>,+,general sibling selector
+        <br>**พิมตัวหนอนไม่ได้ค่ะ</div>
+    
+    </div>
+
+</body>
+</html>
