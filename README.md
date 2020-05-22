@@ -1,6 +1,6 @@
 # AboutMe  
 
-[cake](IMG_2378.JPG)  
+![cake](IMG_2378.JPG)  
 
 ***
 ## Name 
