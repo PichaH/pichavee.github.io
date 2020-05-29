@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+</head>
+<body>
+    <h1>Create an Account</h1>
+ <form action="/action_page.php">
+    <input type="hidden" name="secret" value="12345">
+<label>Email:</label>
+<br>
+<input type="text"name="email"><br>
+
+<label>Password:</label><br>
+<input type="password" name="password">
+<br>
+<label>Age:</label><br>
+
+<select name="age">
+<option value="">Select Age</option>
+ <option value="g1">Under 18</option>
+<option value="g2">18 to 30</option>
+<option value="g3">31 to 45</option>
+<option value="g4">46+</option>
+</select><br>
+
+<label>Tell us a little about yourself:</label>
+<br>
+<textarea name="about" cols="50" rows="5"></textarea>
+
+<br><input type="checkbox" name="accepts_tos" value="yes">
+I agree to the <a href="/action_page.php" target="_blank">terms of service</a>
+
+<p>
+    <input type="submit" value="Sign up">
+</p>
+</form>
+
+</body>
+</html>

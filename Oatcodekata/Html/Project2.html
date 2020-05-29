@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FROM VALIDATION PROJECT</title>
+</head>
+<style>
+    h1{
+        font-style: normal;
+        color: darkblue;
+    }
+    h2{
+        font-style: italic;
+        color: darkgrey;
+    }
+</style>
+
+<body>
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+   <form id="orderForm" autocomplete="on">
+       <fieldset>
+           <legend>Customer Info</legend>
+           <p>
+      <label>Name:
+      <input id="fullname" name="name" type="text" placeholder="Enter your name" autofocus required size="50">
+</label><br>
+</p> 
+<!--The Telephone field should use the new type tel, as shown in Listing 4. Your code should have a similar placeholder, 
+    which tells the user how to enter information. The pattern created restricts user entry to numbers only, and the numbers must follow a pattern like "1-123-123-1234."-->
+<p>
+    <label>Telephone:
+     <input id="tel" name="telephone" type="tel" required size="50" 
+     placeholder="Pattarn:1-234-567-8910" pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]{4}))">
+</label>
+</p>
+<!--The Email address field should have a placeholder and allow multiple entries. The type for the email address should be email, as shown in Listing 5. When the email type is used, the field automatically verifies that it is in fact an email address. The multiple attribute 
+    allows entry of more than one address.-->
+<p>
+    <label>Email:
+    <input id="email" type="email" name="email"
+    placeholder="Enter youe email address" required multiple size="50">
+</label>
+</p>
+     </fieldset>
+     <fieldset>
+         <legend>Books</legend>
+  <p>    
+         <label>
+             <input type="text" name="productlist" list="books" size="45">
+             <datalist id="books">
+                 <option value="HTML5 Canvas by Steve Fulton & Jeff Fulton">
+                     <option value="JavaScript: The Definitive Guide by David Flanagan">
+                     <option value="HTML5 Geolocation by Anthony T. Holdener III">
+                     <option value="Supercharged JavaScript Graphics by Raffaele Cecco">
+                     <option value="HTML5: Up and Running by Mark Pilgrim">
+             </datalist>
+         </label>
+         <label>
+             Quanlity (Maximum 5): <input name="form_number" id="form_number" type="number" min="1" max="5">
+
+         </label>
+</p>   
+</fieldset>
+<input type="submit"value="Submit" />
+</form>
+    
+</body>
+</html>
